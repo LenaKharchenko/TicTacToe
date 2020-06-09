@@ -34,8 +34,8 @@
             this.resetWinCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gameModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.player1VsPlayer2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.player1VsComputerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.player1VsPlayer2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.A1 = new System.Windows.Forms.Button();
             this.A2 = new System.Windows.Forms.Button();
             this.A3 = new System.Windows.Forms.Button();
@@ -62,7 +62,7 @@
             this.gameModeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(306, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(306, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -74,7 +74,7 @@
             this.exitToolStripMenuItem});
             this.newGameToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(46, 28);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(46, 25);
             this.newGameToolStripMenuItem.Text = "File";
             // 
             // newGameToolStripMenuItem1
@@ -105,15 +105,8 @@
             this.player1VsPlayer2ToolStripMenuItem});
             this.gameModeToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.gameModeToolStripMenuItem.Name = "gameModeToolStripMenuItem";
-            this.gameModeToolStripMenuItem.Size = new System.Drawing.Size(107, 28);
+            this.gameModeToolStripMenuItem.Size = new System.Drawing.Size(107, 25);
             this.gameModeToolStripMenuItem.Text = "Game Mode";
-            // 
-            // player1VsPlayer2ToolStripMenuItem
-            // 
-            this.player1VsPlayer2ToolStripMenuItem.Name = "player1VsPlayer2ToolStripMenuItem";
-            this.player1VsPlayer2ToolStripMenuItem.Size = new System.Drawing.Size(237, 30);
-            this.player1VsPlayer2ToolStripMenuItem.Text = "Player1 vs Player2";
-            this.player1VsPlayer2ToolStripMenuItem.Click += new System.EventHandler(this.player1VsPlayer2ToolStripMenuItem_Click);
             // 
             // player1VsComputerToolStripMenuItem
             // 
@@ -121,6 +114,13 @@
             this.player1VsComputerToolStripMenuItem.Size = new System.Drawing.Size(237, 30);
             this.player1VsComputerToolStripMenuItem.Text = "Player1 vs Computer";
             this.player1VsComputerToolStripMenuItem.Click += new System.EventHandler(this.player1VsComputerToolStripMenuItem_Click);
+            // 
+            // player1VsPlayer2ToolStripMenuItem
+            // 
+            this.player1VsPlayer2ToolStripMenuItem.Name = "player1VsPlayer2ToolStripMenuItem";
+            this.player1VsPlayer2ToolStripMenuItem.Size = new System.Drawing.Size(237, 30);
+            this.player1VsPlayer2ToolStripMenuItem.Text = "Player1 vs Player2";
+            this.player1VsPlayer2ToolStripMenuItem.Click += new System.EventHandler(this.player1VsPlayer2ToolStripMenuItem_Click);
             // 
             // A1
             // 
@@ -325,6 +325,8 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(328, 440);
+            this.MinimumSize = new System.Drawing.Size(328, 440);
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowIcon = false;
